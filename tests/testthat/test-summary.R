@@ -42,7 +42,7 @@ test_that("The summary pander method returns the correct object", {
   expect_equal(pander_input[15], "")
 })
 
-test_that("The summary pander method returns the correct object", {
+test_that("The summary kable method returns the correct object", {
   s <- skim(iris)  %>% summary()
   kable_input <- capture.output(kable(s))
   expect_equal(kable_input[1], "$Summary")
