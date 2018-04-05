@@ -27,8 +27,6 @@ options <- new.env()
 #' @export
 magrittr::`%>%`
 
-#' @importFrom pander pander
-
 #' @importFrom tidyselect contains
 #' @aliases select_helpers
 #' @export

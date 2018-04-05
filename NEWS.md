@@ -13,12 +13,15 @@ skimr 1.0.2 (2018-xx-xx)
    * New vignette showing defaults for skimmers and formats.
    * Vector output match data frame output more closely.
    * Add minimum required version for testhat.
+   * Add minimum requred version for knitr.
 
 ### BUG FIXES
   * You can use `skim_with()` to add and remove skimmers at the same time, i.e.
     `skim_with(iqr = IQR, hist = NULL)` works as expected.
   * Histograms work when Inf or -Inf are present.
   * Change seq( ) parameter to length.out to avoid problems with name matching.
+  * Summary should not display a data frame name of "." 
+    (which occurs when piping begins with the data frame).
 
 skimr 1.0.1 (2018-01-09)
 ========================
